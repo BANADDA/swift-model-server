@@ -22,7 +22,7 @@ A comprehensive system for deploying and serving multiple large language models 
 
 ```bash
 # Clone the repository
-git clone https://your-repository-url/swift-model-server.git
+git clone https://BANADDA/swift-model-server.git
 cd swift-model-server
 
 # Run the installation script
