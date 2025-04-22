@@ -1,0 +1,19 @@
+{
+    "model_id": "deepseek-ai/deepseek-coder-7b-instruct",
+    "deployed_model_id": "models/quantized/deepseek-7b-gptq",
+    "display_name": "DeepSeek Coder",
+    "port": 8001,
+    "gpu_id": 0,
+    "quantization": {
+      "enabled": true,
+      "method": "gptq",
+      "bits": 4
+    },
+    "parameters": {
+      "max_model_len": 8192,
+      "gpu_memory_utilization": 0.85,
+      "tensor_parallel_size": 1
+    },
+    "pid": 12346,
+    "created_at": "2025-04-21T10:35:00.000Z"
+  }

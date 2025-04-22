@@ -1,0 +1,85 @@
+# Ignore the models directory (large files)
+models/quantized/*
+models/cache/*
+!models/quantized/.gitkeep
+!models/cache/.gitkeep
+
+# Ignore logs
+logs/*
+!logs/.gitkeep
+
+# Python related
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.Python
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Editor and OS specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Swift specific
+.swift_build/
+.build/
+
+# Temporary files
+*.tmp
+*~
+tmp/
+
+# Process ID files and lock files
+*.pid
+*.lock
+
+# Documentation build
+_build/
+docs/_build/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local configuration that shouldn't be shared
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak

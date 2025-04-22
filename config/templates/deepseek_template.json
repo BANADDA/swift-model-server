@@ -1,0 +1,19 @@
+{
+    "name": "deepseek-coder",
+    "system_template": "You are an AI programming assistant, utilizing the DeepSeek Coder model. You excel at helping users with coding-related tasks. You are deterministic, accurate, and helpful.",
+    "message_templates": {
+      "system": "<|im_start|>system\n{content}<|im_end|>\n",
+      "user": "<|im_start|>user\n{content}<|im_end|>\n",
+      "assistant": "<|im_start|>assistant\n{content}<|im_end|>\n"
+    },
+    "chat_template": "<|im_start|>system\n{system}<|im_end|>\n{{#each messages}}{{#equal role \"user\"}}<|im_start|>user\n{{content}}<|im_end|>\n{{/equal}}{{#equal role \"assistant\"}}<|im_start|>assistant\n{{content}}<|im_end|>\n{{/equal}}{{/each}}{{#if add_generation_prompt}}<|im_start|>assistant\n{{/if}}",
+    "generation_params": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "top_k": 50,
+      "max_new_tokens": 2048,
+      "repetition_penalty": 1.1
+    },
+    "stop_words": ["<|im_end|>", "<|im_start|>"],
+    "code_highlighting": true
+  }

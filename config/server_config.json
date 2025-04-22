@@ -1,0 +1,16 @@
+{
+    "host": "0.0.0.0",
+    "port": 8888,
+    "log_level": "info",
+    "infer_backend": "vllm",
+    "max_model_len": 8192,
+    "gpu_memory_utilization": 0.9,
+    "enable_cors": true,
+    "allowed_origins": ["*"],
+    "default_model_configs": {
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "top_p": 0.95
+    },
+    "starting_port": 8000
+  }

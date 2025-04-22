@@ -1,0 +1,19 @@
+{
+    "model_id": "Qwen/Qwen1.5-7B-Chat",
+    "deployed_model_id": "models/quantized/qwen1.5-7b-awq",
+    "display_name": "Qwen1.5-7B-Chat",
+    "port": 8000,
+    "gpu_id": 0,
+    "quantization": {
+      "enabled": true,
+      "method": "awq",
+      "bits": 4
+    },
+    "parameters": {
+      "max_model_len": 8192,
+      "gpu_memory_utilization": 0.9,
+      "tensor_parallel_size": 1
+    },
+    "pid": 12345,
+    "created_at": "2025-04-21T10:30:00.000Z"
+  }
